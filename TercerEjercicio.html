@@ -1,0 +1,38 @@
+<meta charset="UTF-8">
+<h1>Programa</h1>
+<script>
+
+
+function saltolinea(n){
+let contador=1;
+while(contador<=n){
+document.write("<br>");
+contador++;
+}
+}
+var anho=2025;
+document.write("Juan tiene: "+(anho-2020)+" años");
+saltolinea(2);
+document.write("Pedro tiene: "+(anho-1995)+" años");
+anho=2030;
+saltolinea(2);
+document.write("Carlos tiene: "+(anho-2005)+" años");
+saltolinea(4);
+var anho=2020;
+document.write("Jimena tiene: "+(anho-2010)+" años");
+saltolinea(2);
+document.write("Paola tiene: "+(anho-1995)+" años");
+saltolinea(2);
+document.write("Laura tiene: "+(anho-2005)+" años");
+saltolinea(1);
+var jim=10;
+var pao=25;
+var lau=15;
+var nombre1="Jimena";
+var nombre2="Paola";
+var nombre3="Laura";
+promedio=(jim+pao+lau)/3
+document.write("El promedio de las edades de: "+nombre1+" , "+nombre2+" , "+nombre3+" es "+Math.round(promedio));
+saltolinea(2);
+
+</script>
