@@ -1,0 +1,28 @@
+<meta charset="UTF-8">
+<h1>CALCULAR IMC</h1>
+
+<script>
+function saltarlinea(){
+document.write("<br>".repeat(3));
+}
+function imprimir(text){
+
+document.write(text);
+saltarlinea();
+}
+
+function imc(peso, altura,nombre){
+var imc=peso/(altura*altura)
+imprimir("El IMC de la persona llamada "+nombre+" es igual a : "+imc);
+return imc
+}
+
+function promedioimc(imc1,imc2){
+return ((imc1+imc2)/2)
+}
+
+imc1=imc(80,1.85);
+imc2=imc(60,1.78);
+imprimir("El promedio de IMC de la persona 1 y la persona 2 es de: "+promedioimc(imc1,imc2));
+
+</script>
