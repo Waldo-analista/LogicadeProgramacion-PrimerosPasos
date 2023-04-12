@@ -1,0 +1,25 @@
+<meta charset="UTF-8">
+<h1>CALCULAR IMC</h1>
+
+<script>
+function saltarlinea(){
+document.write("<br>".repeat(3));
+}
+function imprimir(text){
+
+document.write(text);
+saltarlinea();
+document.write("<hr>");
+}
+
+function imc(peso, altura,nombre){
+var imc=peso/(altura*altura)
+imprimir("El IMC de "+nombre+" es igual a: "+imc);
+}
+
+let nombre=prompt("Ingrese su nombre");
+let peso= prompt("Ingrese su peso en kg");
+let altura=prompt("Ingrese su altura en mts");
+imc(peso,altura,nombre);
+
+</script>
